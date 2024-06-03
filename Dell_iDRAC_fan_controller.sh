@@ -126,6 +126,7 @@ while true; do
     then
       IS_DELL_FAN_CONTROL_PROFILE_APPLIED=true
       COMMENT="CPU 2 temperature is too high, Dell default dynamic fan control profile applied for safety"
+      sleep 5m
     fi
   else
     apply_user_fan_control_profile
