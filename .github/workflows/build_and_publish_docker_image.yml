@@ -29,7 +29,6 @@ jobs:
       uses: docker/metadata-action@v5
       with:
         images: |
-          ${{ steps.docker_image_name.outputs.value }}
           ghcr.io/${{ steps.docker_image_name.outputs.value }}
         tags: type=raw,value=latest
         
